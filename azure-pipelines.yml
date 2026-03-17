@@ -45,7 +45,7 @@ stages:
         repository: 'repo-2'
         command: 'push'
         tags: |
-          $(version)
+           backend_$(Build.BuildId)
 - stage: CleanupDockerImages
   displayName: 'Clean Up Docker Images'
   dependsOn: PushDockerImage
