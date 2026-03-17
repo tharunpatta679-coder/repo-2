@@ -24,7 +24,7 @@ stages:
       displayName: 'Build Docker Image'
       inputs:
         containerRegistry: 'Docker-connection'
-        repository: 'three tier appication-project'
+        repository: 'repo-2'
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: |
@@ -42,7 +42,7 @@ stages:
       displayName: 'Push Docker Image' 
       inputs:
         containerRegistry: 'Docker-connection'
-        repository: 'three tier application-project'
+        repository: 'repo-2'
         command: 'push'
         tags: |
           $(version)
