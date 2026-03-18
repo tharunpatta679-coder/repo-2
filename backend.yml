@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: bunny01.azurecr.io/repo-2:VERSION
+        image: bunny01.azurecr.io/backend1:latest
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR
