@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: tharunregistry.azurecr.io/backend1:latest
+        image: tharunregistry.azurecr.io/backend1:VERSION
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR
