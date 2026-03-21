@@ -28,7 +28,6 @@ stages:
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags:  |
-          latest
           backend_$(Build.BuildId)
       name: buildImage
 
@@ -46,7 +45,6 @@ stages:
         repository: 'backend1'
         command: 'push'
         tags:  |
-           latest
            $(version)
 - stage: CleanupDockerImages
   displayName: 'Clean Up Docker Images'
