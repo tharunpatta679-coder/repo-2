@@ -24,7 +24,7 @@ stages:
       displayName: 'Build Docker Image'
       inputs:
         containerRegistry: 'dockerconnection'
-        repository: 'backend1'
+        repository: 'backenddeploy'
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags:  |
@@ -43,7 +43,7 @@ stages:
       displayName: 'Push Docker Image' 
       inputs:
         containerRegistry: 'dockerconnection'
-        repository: 'backend1'
+        repository: 'backenddeply'
         command: 'push'
         tags:  |
            latest
