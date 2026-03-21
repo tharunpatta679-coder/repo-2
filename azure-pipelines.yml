@@ -43,7 +43,7 @@ stages:
       displayName: 'Push Docker Image' 
       inputs:
         containerRegistry: 'dockerconnection'
-        repository: 'backenddeply'
+        repository: 'backenddeploy'
         command: 'push'
         tags:  |
            latest
